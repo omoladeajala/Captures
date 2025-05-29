@@ -24,6 +24,57 @@
   .month ul li{
     color: white;
     font-size: 20px;
+    text-transform: uppercase; 
+    letter-spacing: 3px;
+  }
+  .month .prev{
+    float: left;
+    padding-top: 20px;
+  }
+  .month .next{
+    float: right;
+    padding: 10px;
+  }
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ddd;
+  }
+  .weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+  }
+  .days{
+    padding: 10px 0;
+    background-color:#eee;
+    margin: 0;
+  }
+  .days li{
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 7px;
+    font-size: 12px;
+    color: #777;
+  }
+  .days li .active{
+    padding: 5px;
+    background-color: #1abc9c;
+    color: white !important;
+  }
+  @media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+  }
+  @media screen and (max-width:420px) {
+    .weekdays li, .days li{width: 12.5%;}
+    .days li .active{padding: 2px;}
+  }
+   @media screen and (max-width:290px) {
+    .weekdays li, .days li{width: 12.2%;}
+    .days li .active{padding: 2px;}
   }
         </style>
     </head>
@@ -40,7 +91,7 @@
     </ul>
 </div> 
 <ul class="weekdays">
-    <li>Mo</li>
+    <li>Mon</li>
      <li>Tue</li>
       <li>Wed</li>
        <li>Thurs</li>
@@ -58,7 +109,7 @@
     <li>7</li>
     <li>8</li>
     <li>9</li>
-    <li><span class="active">10</span></li>
+    <li>10</li>
     <li>11</li>
     <li>12</li>
     <li>13</li>
@@ -74,7 +125,7 @@
     <li>23</li>
     <li>24</li>
     <li>25</li>
-    <li>26</li>
+    <li><span class="active">26</span></li>
     <li>27</li>
     <li>28</li>
     <li>29</li>
